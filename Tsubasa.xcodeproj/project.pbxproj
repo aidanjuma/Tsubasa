@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AAE81E1A2A6F30AD00D4AEB0 /* TsubasaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81E192A6F30AD00D4AEB0 /* TsubasaApp.swift */; };
-		AAE81E1C2A6F30AD00D4AEB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81E1B2A6F30AD00D4AEB0 /* ContentView.swift */; };
 		AAE81E1E2A6F30B000D4AEB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE81E1D2A6F30B000D4AEB0 /* Assets.xcassets */; };
 		AAE81E212A6F30B000D4AEB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE81E202A6F30B000D4AEB0 /* Preview Assets.xcassets */; };
 		AAE81E2B2A6F30B000D4AEB0 /* TsubasaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81E2A2A6F30B000D4AEB0 /* TsubasaTests.swift */; };
 		AAE81E352A6F30B000D4AEB0 /* TsubasaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81E342A6F30B000D4AEB0 /* TsubasaUITests.swift */; };
 		AAE81E372A6F30B000D4AEB0 /* TsubasaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81E362A6F30B000D4AEB0 /* TsubasaUITestsLaunchTests.swift */; };
+		AAE81E452A6F312000D4AEB0 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81E442A6F312000D4AEB0 /* RootView.swift */; };
+		AAE81E472A6F312F00D4AEB0 /* RootDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81E462A6F312F00D4AEB0 /* RootDomain.swift */; };
+		AAE81E4A2A6F314700D4AEB0 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = AAE81E492A6F314700D4AEB0 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		AAE81E162A6F30AD00D4AEB0 /* Tsubasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tsubasa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE81E192A6F30AD00D4AEB0 /* TsubasaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TsubasaApp.swift; sourceTree = "<group>"; };
-		AAE81E1B2A6F30AD00D4AEB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AAE81E1D2A6F30B000D4AEB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAE81E202A6F30B000D4AEB0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AAE81E262A6F30B000D4AEB0 /* TsubasaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TsubasaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,8 @@
 		AAE81E302A6F30B000D4AEB0 /* TsubasaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TsubasaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE81E342A6F30B000D4AEB0 /* TsubasaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TsubasaUITests.swift; sourceTree = "<group>"; };
 		AAE81E362A6F30B000D4AEB0 /* TsubasaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TsubasaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AAE81E442A6F312000D4AEB0 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		AAE81E462A6F312F00D4AEB0 /* RootDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootDomain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE81E4A2A6F314700D4AEB0 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +98,7 @@
 		AAE81E182A6F30AD00D4AEB0 /* Tsubasa */ = {
 			isa = PBXGroup;
 			children = (
-				AAE81E192A6F30AD00D4AEB0 /* TsubasaApp.swift */,
-				AAE81E1B2A6F30AD00D4AEB0 /* ContentView.swift */,
+				AAE81E432A6F311300D4AEB0 /* Root */,
 				AAE81E1D2A6F30B000D4AEB0 /* Assets.xcassets */,
 				AAE81E1F2A6F30B000D4AEB0 /* Preview Content */,
 			);
@@ -127,6 +130,16 @@
 			path = TsubasaUITests;
 			sourceTree = "<group>";
 		};
+		AAE81E432A6F311300D4AEB0 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				AAE81E192A6F30AD00D4AEB0 /* TsubasaApp.swift */,
+				AAE81E442A6F312000D4AEB0 /* RootView.swift */,
+				AAE81E462A6F312F00D4AEB0 /* RootDomain.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +156,9 @@
 			dependencies = (
 			);
 			name = Tsubasa;
+			packageProductDependencies = (
+				AAE81E492A6F314700D4AEB0 /* ComposableArchitecture */,
+			);
 			productName = Tsubasa;
 			productReference = AAE81E162A6F30AD00D4AEB0 /* Tsubasa.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +231,9 @@
 				Base,
 			);
 			mainGroup = AAE81E0D2A6F30AD00D4AEB0;
+			packageReferences = (
+				AAE81E482A6F314700D4AEB0 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = AAE81E172A6F30AD00D4AEB0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAE81E1C2A6F30AD00D4AEB0 /* ContentView.swift in Sources */,
 				AAE81E1A2A6F30AD00D4AEB0 /* TsubasaApp.swift in Sources */,
+				AAE81E452A6F312000D4AEB0 /* RootView.swift in Sources */,
+				AAE81E472A6F312F00D4AEB0 /* RootDomain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +608,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AAE81E482A6F314700D4AEB0 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.56.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AAE81E492A6F314700D4AEB0 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AAE81E482A6F314700D4AEB0 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AAE81E0E2A6F30AD00D4AEB0 /* Project object */;
 }
