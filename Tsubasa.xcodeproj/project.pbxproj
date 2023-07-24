@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAE81E1A2A6F30AD00D4AEB0 /* TsubasaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81E192A6F30AD00D4AEB0 /* TsubasaApp.swift */; };
+		AAE81E1C2A6F30AD00D4AEB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81E1B2A6F30AD00D4AEB0 /* ContentView.swift */; };
+		AAE81E1E2A6F30B000D4AEB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE81E1D2A6F30B000D4AEB0 /* Assets.xcassets */; };
+		AAE81E212A6F30B000D4AEB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE81E202A6F30B000D4AEB0 /* Preview Assets.xcassets */; };
+		AAE81E2B2A6F30B000D4AEB0 /* TsubasaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81E2A2A6F30B000D4AEB0 /* TsubasaTests.swift */; };
+		AAE81E352A6F30B000D4AEB0 /* TsubasaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81E342A6F30B000D4AEB0 /* TsubasaUITests.swift */; };
+		AAE81E372A6F30B000D4AEB0 /* TsubasaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81E362A6F30B000D4AEB0 /* TsubasaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAE81E272A6F30B000D4AEB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAE81E0E2A6F30AD00D4AEB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAE81E152A6F30AD00D4AEB0;
+			remoteInfo = Tsubasa;
+		};
+		AAE81E312A6F30B000D4AEB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAE81E0E2A6F30AD00D4AEB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAE81E152A6F30AD00D4AEB0;
+			remoteInfo = Tsubasa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AAE81E162A6F30AD00D4AEB0 /* Tsubasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tsubasa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE81E192A6F30AD00D4AEB0 /* TsubasaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TsubasaApp.swift; sourceTree = "<group>"; };
+		AAE81E1B2A6F30AD00D4AEB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AAE81E1D2A6F30B000D4AEB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAE81E202A6F30B000D4AEB0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AAE81E262A6F30B000D4AEB0 /* TsubasaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TsubasaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE81E2A2A6F30B000D4AEB0 /* TsubasaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TsubasaTests.swift; sourceTree = "<group>"; };
+		AAE81E302A6F30B000D4AEB0 /* TsubasaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TsubasaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE81E342A6F30B000D4AEB0 /* TsubasaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TsubasaUITests.swift; sourceTree = "<group>"; };
+		AAE81E362A6F30B000D4AEB0 /* TsubasaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TsubasaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAE81E132A6F30AD00D4AEB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE81E232A6F30B000D4AEB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE81E2D2A6F30B000D4AEB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAE81E0D2A6F30AD00D4AEB0 = {
+			isa = PBXGroup;
+			children = (
+				AAE81E182A6F30AD00D4AEB0 /* Tsubasa */,
+				AAE81E292A6F30B000D4AEB0 /* TsubasaTests */,
+				AAE81E332A6F30B000D4AEB0 /* TsubasaUITests */,
+				AAE81E172A6F30AD00D4AEB0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAE81E172A6F30AD00D4AEB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAE81E162A6F30AD00D4AEB0 /* Tsubasa.app */,
+				AAE81E262A6F30B000D4AEB0 /* TsubasaTests.xctest */,
+				AAE81E302A6F30B000D4AEB0 /* TsubasaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAE81E182A6F30AD00D4AEB0 /* Tsubasa */ = {
+			isa = PBXGroup;
+			children = (
+				AAE81E192A6F30AD00D4AEB0 /* TsubasaApp.swift */,
+				AAE81E1B2A6F30AD00D4AEB0 /* ContentView.swift */,
+				AAE81E1D2A6F30B000D4AEB0 /* Assets.xcassets */,
+				AAE81E1F2A6F30B000D4AEB0 /* Preview Content */,
+			);
+			path = Tsubasa;
+			sourceTree = "<group>";
+		};
+		AAE81E1F2A6F30B000D4AEB0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AAE81E202A6F30B000D4AEB0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AAE81E292A6F30B000D4AEB0 /* TsubasaTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAE81E2A2A6F30B000D4AEB0 /* TsubasaTests.swift */,
+			);
+			path = TsubasaTests;
+			sourceTree = "<group>";
+		};
+		AAE81E332A6F30B000D4AEB0 /* TsubasaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AAE81E342A6F30B000D4AEB0 /* TsubasaUITests.swift */,
+				AAE81E362A6F30B000D4AEB0 /* TsubasaUITestsLaunchTests.swift */,
+			);
+			path = TsubasaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAE81E152A6F30AD00D4AEB0 /* Tsubasa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAE81E3A2A6F30B000D4AEB0 /* Build configuration list for PBXNativeTarget "Tsubasa" */;
+			buildPhases = (
+				AAE81E122A6F30AD00D4AEB0 /* Sources */,
+				AAE81E132A6F30AD00D4AEB0 /* Frameworks */,
+				AAE81E142A6F30AD00D4AEB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tsubasa;
+			productName = Tsubasa;
+			productReference = AAE81E162A6F30AD00D4AEB0 /* Tsubasa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAE81E252A6F30B000D4AEB0 /* TsubasaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAE81E3D2A6F30B000D4AEB0 /* Build configuration list for PBXNativeTarget "TsubasaTests" */;
+			buildPhases = (
+				AAE81E222A6F30B000D4AEB0 /* Sources */,
+				AAE81E232A6F30B000D4AEB0 /* Frameworks */,
+				AAE81E242A6F30B000D4AEB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAE81E282A6F30B000D4AEB0 /* PBXTargetDependency */,
+			);
+			name = TsubasaTests;
+			productName = TsubasaTests;
+			productReference = AAE81E262A6F30B000D4AEB0 /* TsubasaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AAE81E2F2A6F30B000D4AEB0 /* TsubasaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAE81E402A6F30B000D4AEB0 /* Build configuration list for PBXNativeTarget "TsubasaUITests" */;
+			buildPhases = (
+				AAE81E2C2A6F30B000D4AEB0 /* Sources */,
+				AAE81E2D2A6F30B000D4AEB0 /* Frameworks */,
+				AAE81E2E2A6F30B000D4AEB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAE81E322A6F30B000D4AEB0 /* PBXTargetDependency */,
+			);
+			name = TsubasaUITests;
+			productName = TsubasaUITests;
+			productReference = AAE81E302A6F30B000D4AEB0 /* TsubasaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAE81E0E2A6F30AD00D4AEB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AAE81E152A6F30AD00D4AEB0 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					AAE81E252A6F30B000D4AEB0 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = AAE81E152A6F30AD00D4AEB0;
+					};
+					AAE81E2F2A6F30B000D4AEB0 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = AAE81E152A6F30AD00D4AEB0;
+					};
+				};
+			};
+			buildConfigurationList = AAE81E112A6F30AD00D4AEB0 /* Build configuration list for PBXProject "Tsubasa" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAE81E0D2A6F30AD00D4AEB0;
+			productRefGroup = AAE81E172A6F30AD00D4AEB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAE81E152A6F30AD00D4AEB0 /* Tsubasa */,
+				AAE81E252A6F30B000D4AEB0 /* TsubasaTests */,
+				AAE81E2F2A6F30B000D4AEB0 /* TsubasaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAE81E142A6F30AD00D4AEB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE81E212A6F30B000D4AEB0 /* Preview Assets.xcassets in Resources */,
+				AAE81E1E2A6F30B000D4AEB0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE81E242A6F30B000D4AEB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE81E2E2A6F30B000D4AEB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAE81E122A6F30AD00D4AEB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE81E1C2A6F30AD00D4AEB0 /* ContentView.swift in Sources */,
+				AAE81E1A2A6F30AD00D4AEB0 /* TsubasaApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE81E222A6F30B000D4AEB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE81E2B2A6F30B000D4AEB0 /* TsubasaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE81E2C2A6F30B000D4AEB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAE81E372A6F30B000D4AEB0 /* TsubasaUITestsLaunchTests.swift in Sources */,
+				AAE81E352A6F30B000D4AEB0 /* TsubasaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAE81E282A6F30B000D4AEB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAE81E152A6F30AD00D4AEB0 /* Tsubasa */;
+			targetProxy = AAE81E272A6F30B000D4AEB0 /* PBXContainerItemProxy */;
+		};
+		AAE81E322A6F30B000D4AEB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAE81E152A6F30AD00D4AEB0 /* Tsubasa */;
+			targetProxy = AAE81E312A6F30B000D4AEB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AAE81E382A6F30B000D4AEB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAE81E392A6F30B000D4AEB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAE81E3B2A6F30B000D4AEB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tsubasa/Preview Content\"";
+				DEVELOPMENT_TEAM = 4BQ5N3AH9T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.aidanjuma.Tsubasa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAE81E3C2A6F30B000D4AEB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tsubasa/Preview Content\"";
+				DEVELOPMENT_TEAM = 4BQ5N3AH9T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.aidanjuma.Tsubasa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AAE81E3E2A6F30B000D4AEB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BQ5N3AH9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.aidanjuma.TsubasaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tsubasa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tsubasa";
+			};
+			name = Debug;
+		};
+		AAE81E3F2A6F30B000D4AEB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BQ5N3AH9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.aidanjuma.TsubasaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tsubasa.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tsubasa";
+			};
+			name = Release;
+		};
+		AAE81E412A6F30B000D4AEB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BQ5N3AH9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.aidanjuma.TsubasaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tsubasa;
+			};
+			name = Debug;
+		};
+		AAE81E422A6F30B000D4AEB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4BQ5N3AH9T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.aidanjuma.TsubasaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tsubasa;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAE81E112A6F30AD00D4AEB0 /* Build configuration list for PBXProject "Tsubasa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE81E382A6F30B000D4AEB0 /* Debug */,
+				AAE81E392A6F30B000D4AEB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAE81E3A2A6F30B000D4AEB0 /* Build configuration list for PBXNativeTarget "Tsubasa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE81E3B2A6F30B000D4AEB0 /* Debug */,
+				AAE81E3C2A6F30B000D4AEB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAE81E3D2A6F30B000D4AEB0 /* Build configuration list for PBXNativeTarget "TsubasaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE81E3E2A6F30B000D4AEB0 /* Debug */,
+				AAE81E3F2A6F30B000D4AEB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAE81E402A6F30B000D4AEB0 /* Build configuration list for PBXNativeTarget "TsubasaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE81E412A6F30B000D4AEB0 /* Debug */,
+				AAE81E422A6F30B000D4AEB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAE81E0E2A6F30AD00D4AEB0 /* Project object */;
+}
