@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAE015402A707773005AA99B /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE0153F2A707773005AA99B /* SearchView.swift */; };
+		AAE015432A707C9C005AA99B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE015422A707C9C005AA99B /* View.swift */; };
+		AAE015462A708473005AA99B /* LogbookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE015452A708473005AA99B /* LogbookView.swift */; };
 		AAE81E1A2A6F30AD00D4AEB0 /* TsubasaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81E192A6F30AD00D4AEB0 /* TsubasaApp.swift */; };
 		AAE81E1E2A6F30B000D4AEB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE81E1D2A6F30B000D4AEB0 /* Assets.xcassets */; };
 		AAE81E212A6F30B000D4AEB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE81E202A6F30B000D4AEB0 /* Preview Assets.xcassets */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AAE0153F2A707773005AA99B /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		AAE015422A707C9C005AA99B /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		AAE015452A708473005AA99B /* LogbookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogbookView.swift; sourceTree = "<group>"; };
 		AAE81E162A6F30AD00D4AEB0 /* Tsubasa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tsubasa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE81E192A6F30AD00D4AEB0 /* TsubasaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TsubasaApp.swift; sourceTree = "<group>"; };
 		AAE81E1D2A6F30B000D4AEB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +81,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AAE0153E2A7076F9005AA99B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AAE0153F2A707773005AA99B /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		AAE015412A707C70005AA99B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AAE015422A707C9C005AA99B /* View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AAE015442A708442005AA99B /* Logbook */ = {
+			isa = PBXGroup;
+			children = (
+				AAE015452A708473005AA99B /* LogbookView.swift */,
+			);
+			path = Logbook;
+			sourceTree = "<group>";
+		};
 		AAE81E0D2A6F30AD00D4AEB0 = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +128,10 @@
 		AAE81E182A6F30AD00D4AEB0 /* Tsubasa */ = {
 			isa = PBXGroup;
 			children = (
+				AAE015412A707C70005AA99B /* Extensions */,
 				AAE81E432A6F311300D4AEB0 /* Root */,
+				AAE0153E2A7076F9005AA99B /* Search */,
+				AAE015442A708442005AA99B /* Logbook */,
 				AAE81E1D2A6F30B000D4AEB0 /* Assets.xcassets */,
 				AAE81E1F2A6F30B000D4AEB0 /* Preview Content */,
 			);
@@ -276,8 +309,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE015402A707773005AA99B /* SearchView.swift in Sources */,
 				AAE81E1A2A6F30AD00D4AEB0 /* TsubasaApp.swift in Sources */,
+				AAE015432A707C9C005AA99B /* View.swift in Sources */,
 				AAE81E452A6F312000D4AEB0 /* RootView.swift in Sources */,
+				AAE015462A708473005AA99B /* LogbookView.swift in Sources */,
 				AAE81E472A6F312F00D4AEB0 /* RootDomain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

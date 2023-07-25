@@ -15,11 +15,11 @@ struct RootView: View {
         WithViewStore(self.store) { viewStore in
             TabView(selection: viewStore.binding(get: \.selectedTab, send: RootDomain.Action.tabSelected)
             ) {
-                Text("View 1").tabItem {
+                SearchView().tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Search")
                 }
-                Text("View 2").tabItem {
+                LogbookView().tabItem {
                     Image(systemName: "book.pages")
                     Text("Logbook")
                 }
