@@ -32,11 +32,34 @@ struct SearchView: View {
                                 .fontDesign(.rounded)
                                 .foregroundColor(.white)
                         }
-                        Text("Find ✈️ that match your schedule")
+                        Text("Find a ✈️ that works with your 🗓️.")
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .foregroundColor(.white)
-                            .padding([.bottom, .top], 5.0)
+                            .padding([.bottom, .top], 7.5)
+                        HStack {
+                            RoundedRectangleButton(
+                                store: store.scope(
+                                    state: \.oneWayButtonState,
+                                    action: { _ in .changeTicketType(.oneWay) }
+                                ),
+                                cornerRadius: 15.0,
+                                width: geometry.size.width * 0.45,
+                                height: 50.0,
+                                label: "One Way"
+                            )
+                            Spacer()
+                            RoundedRectangleButton(
+                                store: store.scope(
+                                    state: \.twoWayButtonState,
+                                    action: { _ in .changeTicketType(.twoWay) }
+                                ),
+                                cornerRadius: 15.0,
+                                width: geometry.size.width * 0.45,
+                                height: 50.0,
+                                label: "Return"
+                            )
+                        }
                     }
                     .padding()
                 }
