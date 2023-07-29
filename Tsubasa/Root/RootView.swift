@@ -15,7 +15,7 @@ struct RootView: View {
         WithViewStore(self.store) { viewStore in
             TabView(selection: viewStore.binding(get: \.selectedTab, send: RootDomain.Action.tabSelected)
             ) {
-                SearchView().tabItem {
+                SearchView(store: Store(initialState: SearchDomain.State(), reducer: SearchDomain())).tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Search")
                 }

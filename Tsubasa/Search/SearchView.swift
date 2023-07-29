@@ -6,35 +6,47 @@
 //
 //  Inspired by: https://cdn.dribbble.com/userupload/4152935/file/original-80a28f3c17f92ac0921e2b93a61ea89b.png
 
+import ComposableArchitecture
 import SwiftUI
 
 struct SearchView: View {
+    let store: Store<SearchDomain.State, SearchDomain.Action>
+
     var body: some View {
-        GeometryReader { geometry in
-            ZStack(alignment: .topLeading) {
-                Color.accentColor
-                    .frame(height: geometry.size.height * 0.5)
-                    .cornerRadius(60.0, corners: [.bottomLeft, .bottomRight])
-                    .ignoresSafeArea()
-                Image("BlueDotmap")
-                    .resizable()
-                    .scaledToFit()
-                    .offset(y: geometry.size.height * -0.05)
-                VStack {
-                    HStack {
-                        Text("Hey!")
-                            .font(.title)
+        WithViewStore(self.store) { _ in
+            GeometryReader { geometry in
+                ZStack(alignment: .topLeading) {
+                    Color.accentColor
+                        .frame(height: geometry.size.height * 0.5)
+                        .cornerRadius(60.0, corners: [.bottomLeft, .bottomRight])
+                        .ignoresSafeArea()
+                    Image("BlueDotmap")
+                        .resizable()
+                        .scaledToFit()
+                        .offset(y: geometry.size.height * -0.05)
+                    VStack(alignment: .leading) {
+                        HStack {
+                            Text("Hey!")
+                                .font(.title)
+                                .fontWeight(.bold)
+                                .fontDesign(.rounded)
+                                .foregroundColor(.white)
+                        }
+                        Text("Find ✈️ that match your schedule")
+                            .font(.largeTitle)
                             .fontWeight(.bold)
-                            .fontDesign(.rounded)
                             .foregroundColor(.white)
+                            .padding([.bottom, .top], 5.0)
                     }
+                    .padding()
                 }
-                .padding()
             }
         }
     }
 }
 
 #Preview {
-    SearchView()
+    SearchView(store: Store(initialState: SearchDomain.State()) {
+        SearchDomain()
+    })
 }
