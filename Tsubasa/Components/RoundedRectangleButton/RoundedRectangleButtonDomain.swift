@@ -13,11 +13,11 @@ struct RoundedRectangleButtonDomain: ReducerProtocol {
         var isToggleable: Bool
         var isToggled: Bool?
     }
-    
+
     enum Action: Equatable {
         case togglePressed
     }
-    
+
     var body: some ReducerProtocol<State, Action> {
         Reduce { state, action in
             switch action {
