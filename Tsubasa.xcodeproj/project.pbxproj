@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA4843D02A786AD60022CFB0 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4843CF2A786AD60022CFB0 /* Airport.swift */; };
 		AADBF2562A7482B000531A08 /* RoundedRectangleButtonDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADBF2552A7482B000531A08 /* RoundedRectangleButtonDomain.swift */; };
 		AADBF2582A7483F700531A08 /* RoundedRectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADBF2572A7483F700531A08 /* RoundedRectangleButton.swift */; };
 		AADBF25A2A7488EB00531A08 /* SearchDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADBF2592A7488EB00531A08 /* SearchDomain.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA4843CF2A786AD60022CFB0 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		AADBF2552A7482B000531A08 /* RoundedRectangleButtonDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleButtonDomain.swift; sourceTree = "<group>"; };
 		AADBF2572A7483F700531A08 /* RoundedRectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleButton.swift; sourceTree = "<group>"; };
 		AADBF2592A7488EB00531A08 /* SearchDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDomain.swift; sourceTree = "<group>"; };
@@ -89,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA4843CE2A786ABF0022CFB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA4843CF2A786AD60022CFB0 /* Airport.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		AADBF2512A74825900531A08 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +167,7 @@
 			children = (
 				AADBF2512A74825900531A08 /* Components */,
 				AAE015412A707C70005AA99B /* Extensions */,
+				AA4843CE2A786ABF0022CFB0 /* Models */,
 				AAE81E432A6F311300D4AEB0 /* Root */,
 				AAE0153E2A7076F9005AA99B /* Search */,
 				AAE015442A708442005AA99B /* Logbook */,
@@ -345,6 +356,7 @@
 				AADBF2562A7482B000531A08 /* RoundedRectangleButtonDomain.swift in Sources */,
 				AAE015432A707C9C005AA99B /* View.swift in Sources */,
 				AAE81E452A6F312000D4AEB0 /* RootView.swift in Sources */,
+				AA4843D02A786AD60022CFB0 /* Airport.swift in Sources */,
 				AAE015462A708473005AA99B /* LogbookView.swift in Sources */,
 				AAE81E472A6F312F00D4AEB0 /* RootDomain.swift in Sources */,
 			);
