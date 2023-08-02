@@ -1,0 +1,11 @@
+// (RootView)
+"search-string" = "Search";
+"logbook-string" = "Logbook";
+
+// (SearchView)
+"hey-string" = "Hey!";
+"search-tagline-string" = "Find a ✈️ that works with your 🗓️.";
+"one-way-string" = "One Way";
+"return-string" = "Return";
+"from-string" = "From";
+"to-string" = "To";

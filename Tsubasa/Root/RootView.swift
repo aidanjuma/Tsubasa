@@ -17,11 +17,11 @@ struct RootView: View {
             ) {
                 SearchView(store: Store(initialState: SearchDomain.State(), reducer: SearchDomain())).tabItem {
                     Image(systemName: "magnifyingglass")
-                    Text("Search")
+                    Text("search-string")
                 }
                 LogbookView().tabItem {
                     Image(systemName: "book.pages")
-                    Text("Logbook")
+                    Text("logbook-string")
                 }
             }
         }

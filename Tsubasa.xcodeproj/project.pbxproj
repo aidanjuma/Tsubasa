@@ -10,6 +10,7 @@
 		AA4843D02A786AD60022CFB0 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4843CF2A786AD60022CFB0 /* Airport.swift */; };
 		AA4EC5852A7ABC4700FAB734 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4EC5842A7ABC4700FAB734 /* SceneDelegate.swift */; };
 		AA4EC5882A7AC2D600FAB734 /* AirportDataAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4EC5872A7AC2D600FAB734 /* AirportDataAPIClient.swift */; };
+		AA924EA02A7B0F3700FB0710 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA924EA22A7B0F3700FB0710 /* Localizable.strings */; };
 		AADBF2562A7482B000531A08 /* RoundedRectangleButtonDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADBF2552A7482B000531A08 /* RoundedRectangleButtonDomain.swift */; };
 		AADBF2582A7483F700531A08 /* RoundedRectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADBF2572A7483F700531A08 /* RoundedRectangleButton.swift */; };
 		AADBF25A2A7488EB00531A08 /* SearchDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADBF2592A7488EB00531A08 /* SearchDomain.swift */; };
@@ -48,6 +49,8 @@
 		AA4843CF2A786AD60022CFB0 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		AA4EC5842A7ABC4700FAB734 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AA4EC5872A7AC2D600FAB734 /* AirportDataAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDataAPIClient.swift; sourceTree = "<group>"; };
+		AA924EA12A7B0F3700FB0710 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AA924EA32A7B0F6F00FB0710 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AADBF2552A7482B000531A08 /* RoundedRectangleButtonDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleButtonDomain.swift; sourceTree = "<group>"; };
 		AADBF2572A7483F700531A08 /* RoundedRectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleButton.swift; sourceTree = "<group>"; };
 		AADBF2592A7488EB00531A08 /* SearchDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDomain.swift; sourceTree = "<group>"; };
@@ -182,9 +185,10 @@
 				AAE81E432A6F311300D4AEB0 /* Root */,
 				AAE0153E2A7076F9005AA99B /* Search */,
 				AAE015442A708442005AA99B /* Logbook */,
-				AAE81E1D2A6F30B000D4AEB0 /* Assets.xcassets */,
 				AAE81E1F2A6F30B000D4AEB0 /* Preview Content */,
 				AA4EC5842A7ABC4700FAB734 /* SceneDelegate.swift */,
+				AAE81E1D2A6F30B000D4AEB0 /* Assets.xcassets */,
+				AA924EA22A7B0F3700FB0710 /* Localizable.strings */,
 			);
 			path = Tsubasa;
 			sourceTree = "<group>";
@@ -312,6 +316,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = AAE81E0D2A6F30AD00D4AEB0;
 			packageReferences = (
@@ -334,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAE81E212A6F30B000D4AEB0 /* Preview Assets.xcassets in Resources */,
+				AA924EA02A7B0F3700FB0710 /* Localizable.strings in Resources */,
 				AAE81E1E2A6F30B000D4AEB0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,12 +412,25 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		AA924EA22A7B0F3700FB0710 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA924EA12A7B0F3700FB0710 /* en */,
+				AA924EA32A7B0F6F00FB0710 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		AAE81E382A6F30B000D4AEB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -475,6 +494,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

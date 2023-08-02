@@ -28,13 +28,13 @@ struct SearchView: View {
                         .offset(y: geometry.size.height * -0.05)
                     VStack(alignment: .leading) {
                         HStack {
-                            Text("Hey!")
+                            Text("hey-string")
                                 .font(.title)
                                 .fontWeight(.bold)
                                 .fontDesign(.rounded)
                                 .foregroundColor(.white)
                         }
-                        Text("Find a ✈️ that works with your 🗓️.")
+                        Text("search-tagline-string")
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .foregroundColor(.white)
@@ -48,7 +48,7 @@ struct SearchView: View {
                                 cornerRadius: 15.0,
                                 width: geometry.size.width * 0.45,
                                 height: 50.0,
-                                label: "One Way"
+                                label: "one-way-string"
                             )
                             Spacer()
                             RoundedRectangleButton(
@@ -59,7 +59,7 @@ struct SearchView: View {
                                 cornerRadius: 15.0,
                                 width: geometry.size.width * 0.45,
                                 height: 50.0,
-                                label: "Return"
+                                label: "return-string"
                             )
                         }
                         HStack {
@@ -97,7 +97,7 @@ struct SearchView: View {
                             VStack(alignment: .leading) {
                                 HStack {
                                     VStack(alignment: .leading) {
-                                        Text("From")
+                                        Text("from-string")
                                             .font(.system(size: 12))
                                             .fontWeight(.medium)
                                             .fontDesign(.rounded)
@@ -114,7 +114,7 @@ struct SearchView: View {
                                     .padding(.top, -4)
                                 HStack {
                                     VStack(alignment: .leading) {
-                                        Text("To")
+                                        Text("to-string")
                                             .font(.system(size: 12.0))
                                             .fontWeight(.medium)
                                             .fontDesign(.rounded)

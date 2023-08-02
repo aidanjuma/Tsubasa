@@ -15,9 +15,9 @@ struct RoundedRectangleButton: View {
     @State private var cornerRadius: CGFloat
     @State private var width: CGFloat
     @State private var height: CGFloat
-    @State private var label: String
+    @State private var label: LocalizedStringKey
 
-    init(store: Store<RoundedRectangleButtonDomain.State, RoundedRectangleButtonDomain.Action>, cornerRadius: CGFloat, width: CGFloat, height: CGFloat, label: String) {
+    init(store: Store<RoundedRectangleButtonDomain.State, RoundedRectangleButtonDomain.Action>, cornerRadius: CGFloat, width: CGFloat, height: CGFloat, label: LocalizedStringKey) {
         self.store = store
         self.cornerRadius = cornerRadius
         self.width = width

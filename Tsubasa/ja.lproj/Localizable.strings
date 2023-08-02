@@ -1,0 +1,11 @@
+// (RootView)
+"search-string" = "航空券を探す";
+"logbook-string" = "飛行日誌";
+
+// (SearchView)
+"hey-string" = "よー！";
+"search-tagline-string" = "あなたの🗓️に会った✈️を見つける。";
+"one-way-string" = "片道";
+"return-string" = "往復";
+"from-string" = "出発地";
+"to-string" = "到着地";
