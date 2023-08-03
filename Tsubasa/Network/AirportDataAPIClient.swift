@@ -9,7 +9,7 @@ import ComposableArchitecture
 import Foundation
 
 struct AirportDataAPIClient {
-    var fetchAirports: () async throws -> [Airport]
+    var fetchAirports: @Sendable () async throws -> [Airport]
 
     struct Failure: Error {}
 }

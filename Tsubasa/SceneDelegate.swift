@@ -16,7 +16,7 @@ struct Tsubasa: App {
     init() {
         self.store = Store(
             initialState: RootDomain.State(),
-            reducer: RootDomain()
+            reducer: RootDomain(fetchAirports: RootDomain.live.fetchAirports)
         )
     }
 

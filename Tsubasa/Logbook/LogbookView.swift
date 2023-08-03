@@ -13,6 +13,8 @@ struct LogbookView: View {
     }
 }
 
+#if DEBUG
 #Preview {
     LogbookView()
 }
+#endif

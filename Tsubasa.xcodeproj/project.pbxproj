@@ -26,6 +26,8 @@
 		AAE81E472A6F312F00D4AEB0 /* RootDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81E462A6F312F00D4AEB0 /* RootDomain.swift */; };
 		AAE81E4A2A6F314700D4AEB0 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = AAE81E492A6F314700D4AEB0 /* ComposableArchitecture */; };
 		AAF614412A7708CB00805801 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF614402A7708CB00805801 /* Color.swift */; };
+		AAFD727D2A7C056E000E77EF /* LaunchProcessesDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFD727C2A7C056E000E77EF /* LaunchProcessesDomain.swift */; };
+		AAFD727F2A7C07FE000E77EF /* DataLoadingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFD727E2A7C07FE000E77EF /* DataLoadingStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		AAE81E442A6F312000D4AEB0 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		AAE81E462A6F312F00D4AEB0 /* RootDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootDomain.swift; sourceTree = "<group>"; };
 		AAF614402A7708CB00805801 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		AAFD727C2A7C056E000E77EF /* LaunchProcessesDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchProcessesDomain.swift; sourceTree = "<group>"; };
+		AAFD727E2A7C07FE000E77EF /* DataLoadingStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadingStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				AA4EC5872A7AC2D600FAB734 /* AirportDataAPIClient.swift */,
+				AAFD727E2A7C07FE000E77EF /* DataLoadingStatus.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 			children = (
 				AADBF2512A74825900531A08 /* Components */,
 				AAE015412A707C70005AA99B /* Extensions */,
+				AAFD727B2A7C055C000E77EF /* Launch Processes */,
 				AA4843CE2A786ABF0022CFB0 /* Models */,
 				AA4EC5862A7AC27800FAB734 /* Network */,
 				AAE81E432A6F311300D4AEB0 /* Root */,
@@ -225,6 +231,14 @@
 				AAE81E462A6F312F00D4AEB0 /* RootDomain.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		AAFD727B2A7C055C000E77EF /* Launch Processes */ = {
+			isa = PBXGroup;
+			children = (
+				AAFD727C2A7C056E000E77EF /* LaunchProcessesDomain.swift */,
+			);
+			path = "Launch Processes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +391,8 @@
 				AAE015462A708473005AA99B /* LogbookView.swift in Sources */,
 				AAE81E472A6F312F00D4AEB0 /* RootDomain.swift in Sources */,
 				AA4EC5852A7ABC4700FAB734 /* SceneDelegate.swift in Sources */,
+				AAFD727F2A7C07FE000E77EF /* DataLoadingStatus.swift in Sources */,
+				AAFD727D2A7C056E000E77EF /* LaunchProcessesDomain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

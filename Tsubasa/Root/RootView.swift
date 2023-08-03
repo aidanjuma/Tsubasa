@@ -27,9 +27,3 @@ struct RootView: View {
         }
     }
 }
-
-#Preview {
-    RootView(store: Store(initialState: RootDomain.State()) {
-        RootDomain()
-    })
-}

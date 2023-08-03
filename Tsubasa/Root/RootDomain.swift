@@ -11,39 +11,37 @@ import Foundation
 struct RootDomain: ReducerProtocol {
     struct State: Equatable {
         var selectedTab = Tab.search
-        var isFirstLaunch = UserDefaults.standard.bool(forKey: "isFirstLaunch")
+        var launchProcessesState = LaunchProcessesDomain.State()
     }
-    
+
     enum Tab {
         case search
         case logbook
     }
-    
+
     enum Action: Equatable {
         case tabSelected(Tab)
-        case tryFirstTimeSetup // Data obtained from UserDefaults.
-        case markFirstTimeSetupAsComplete // Data obtained from UserDefaults.
+        case airportList(LaunchProcessesDomain.Action)
     }
-    
-    @Dependency(\.airportDataApiClient) var airportDataApiClient
-    
+
+    var fetchAirports: @Sendable () async throws -> [Airport]
+
+    static let live = Self(
+        fetchAirports: AirportDataAPIClient.live.fetchAirports
+    )
+
     var body: some ReducerProtocol<State, Action> {
         Reduce { state, action in
             switch action {
+            case .airportList:
+                return .none
             case .tabSelected(let tab):
                 state.selectedTab = tab
                 return .none
-            case .tryFirstTimeSetup:
-                // TODO:
-                if state.isFirstLaunch {
-                    // Fetch commercial-airports.json from GitHub, then...
-                    // ...map data to SQLite database (for use with search).
-                }
-                return .none
-            case .markFirstTimeSetupAsComplete:
-                UserDefaults.standard.set(true, forKey: "isFirstLaunch")
-                return .none
             }
+        }
+        Scope(state: \.launchProcessesState, action: /RootDomain.Action.airportList) {
+            LaunchProcessesDomain(fetchAirports: fetchAirports)
         }
     }
 }

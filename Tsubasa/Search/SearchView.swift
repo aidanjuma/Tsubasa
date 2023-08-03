@@ -153,8 +153,10 @@ struct SearchView: View {
     }
 }
 
+#if DEBUG
 #Preview {
     SearchView(store: Store(initialState: SearchDomain.State()) {
         SearchDomain()
     })
 }
+#endif
