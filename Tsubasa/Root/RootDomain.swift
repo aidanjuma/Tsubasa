@@ -31,6 +31,9 @@ struct RootDomain: ReducerProtocol {
     )
 
     var body: some ReducerProtocol<State, Action> {
+        Scope(state: \.launchProcessesState, action: /RootDomain.Action.airportList) {
+            LaunchProcessesDomain(fetchAirports: fetchAirports)
+        }
         Reduce { state, action in
             switch action {
             case .airportList:
@@ -39,9 +42,6 @@ struct RootDomain: ReducerProtocol {
                 state.selectedTab = tab
                 return .none
             }
-        }
-        Scope(state: \.launchProcessesState, action: /RootDomain.Action.airportList) {
-            LaunchProcessesDomain(fetchAirports: fetchAirports)
         }
     }
 }

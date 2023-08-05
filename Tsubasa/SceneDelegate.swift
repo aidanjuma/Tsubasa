@@ -22,8 +22,17 @@ struct Tsubasa: App {
 
     var body: some Scene {
         WindowGroup {
-            WithViewStore(self.store) { _ in
+            WithViewStore(self.store) { viewStore in
                 RootView(store: store)
+                    .onAppear {
+                        // Run the airport list updater on launch (i.e. appearance of RootView)
+                        viewStore.send(.airportList(.fetchAirports))
+                    }
+                    .onChange(of: viewStore.launchProcessesState, perform: { state in
+                        if !(state.airportList.isEmpty), state.dataLoadingStatus == .success {
+                            viewStore.send(.airportList(.completeFirstLaunch))
+                        }
+                    })
             }
         }
     }

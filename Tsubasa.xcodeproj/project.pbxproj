@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA332B462A7ECF5400AFA746 /* DatabaseDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA332B452A7ECF5400AFA746 /* DatabaseDomain.swift */; };
 		AA4843D02A786AD60022CFB0 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4843CF2A786AD60022CFB0 /* Airport.swift */; };
 		AA4EC5852A7ABC4700FAB734 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4EC5842A7ABC4700FAB734 /* SceneDelegate.swift */; };
 		AA4EC5882A7AC2D600FAB734 /* AirportDataAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4EC5872A7AC2D600FAB734 /* AirportDataAPIClient.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA332B452A7ECF5400AFA746 /* DatabaseDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseDomain.swift; sourceTree = "<group>"; };
 		AA4843CF2A786AD60022CFB0 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		AA4EC5842A7ABC4700FAB734 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AA4EC5872A7AC2D600FAB734 /* AirportDataAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDataAPIClient.swift; sourceTree = "<group>"; };
@@ -100,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA332B442A7ECEF000AFA746 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				AA332B452A7ECF5400AFA746 /* DatabaseDomain.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		AA4843CE2A786ABF0022CFB0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				AADBF2512A74825900531A08 /* Components */,
+				AA332B442A7ECEF000AFA746 /* Database */,
 				AAE015412A707C70005AA99B /* Extensions */,
 				AAFD727B2A7C055C000E77EF /* Launch Processes */,
 				AA4843CE2A786ABF0022CFB0 /* Models */,
@@ -392,6 +403,7 @@
 				AAE81E472A6F312F00D4AEB0 /* RootDomain.swift in Sources */,
 				AA4EC5852A7ABC4700FAB734 /* SceneDelegate.swift in Sources */,
 				AAFD727F2A7C07FE000E77EF /* DataLoadingStatus.swift in Sources */,
+				AA332B462A7ECF5400AFA746 /* DatabaseDomain.swift in Sources */,
 				AAFD727D2A7C056E000E77EF /* LaunchProcessesDomain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

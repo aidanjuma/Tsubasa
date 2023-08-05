@@ -47,6 +47,6 @@ extension Airport: Decodable {
         self.longitude = try container.decode(Double.self, forKey: .longitude)
         self.timezone = try container.decode(String.self, forKey: .timezone)
 
-        self.id = "\(self.city).\(self.iataCode)"
+        self.id = "\(self.city).\(self.icaoCode).\(self.iataCode)"
     }
 }

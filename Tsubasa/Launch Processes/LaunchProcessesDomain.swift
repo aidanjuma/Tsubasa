@@ -10,8 +10,16 @@ import Foundation
 
 struct LaunchProcessesDomain: ReducerProtocol {
     struct State: Equatable {
+        var isFirstLaunch = {
+            if UserDefaults.standard.object(forKey: "isFirstLaunch") == nil {
+                UserDefaults.standard.set(true, forKey: "isFirstLaunch")
+                return true
+            } else {
+                return UserDefaults.standard.bool(forKey: "isFirstLaunch")
+            }
+        }()
+        
         var dataLoadingStatus = DataLoadingStatus.notStarted
-        var isFirstLaunch = UserDefaults.standard.bool(forKey: "isFirstLaunch")
         var airportList = IdentifiedArrayOf<Airport>()
     }
     
@@ -29,6 +37,7 @@ struct LaunchProcessesDomain: ReducerProtocol {
         Reduce { state, action in
             switch action {
             case .fetchAirports:
+                print(state.isFirstLaunch)
                 if state.isFirstLaunch {
                     if state.dataLoadingStatus == .success || state.dataLoadingStatus == .loading {
                         return .none
@@ -47,6 +56,7 @@ struct LaunchProcessesDomain: ReducerProtocol {
                 state.airportList = IdentifiedArrayOf(
                     uniqueElements: airports
                 )
+                print(state.airportList)
                 return .none
             case .fetchAirportsResponse(.failure(let error)):
                 state.dataLoadingStatus = .error
