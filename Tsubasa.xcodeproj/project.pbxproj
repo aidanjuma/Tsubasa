@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AA332B462A7ECF5400AFA746 /* DatabaseDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA332B452A7ECF5400AFA746 /* DatabaseDomain.swift */; };
 		AA4843D02A786AD60022CFB0 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4843CF2A786AD60022CFB0 /* Airport.swift */; };
 		AA4EC5852A7ABC4700FAB734 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4EC5842A7ABC4700FAB734 /* SceneDelegate.swift */; };
 		AA4EC5882A7AC2D600FAB734 /* AirportDataAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4EC5872A7AC2D600FAB734 /* AirportDataAPIClient.swift */; };
@@ -26,6 +25,7 @@
 		AAE81E452A6F312000D4AEB0 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81E442A6F312000D4AEB0 /* RootView.swift */; };
 		AAE81E472A6F312F00D4AEB0 /* RootDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE81E462A6F312F00D4AEB0 /* RootDomain.swift */; };
 		AAE81E4A2A6F314700D4AEB0 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = AAE81E492A6F314700D4AEB0 /* ComposableArchitecture */; };
+		AAEA9C8D2A819ECC00AC8705 /* AirportModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAEA9C8B2A819ECC00AC8705 /* AirportModel.xcdatamodeld */; };
 		AAF614412A7708CB00805801 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF614402A7708CB00805801 /* Color.swift */; };
 		AAFD727D2A7C056E000E77EF /* LaunchProcessesDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFD727C2A7C056E000E77EF /* LaunchProcessesDomain.swift */; };
 		AAFD727F2A7C07FE000E77EF /* DataLoadingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFD727E2A7C07FE000E77EF /* DataLoadingStatus.swift */; };
@@ -49,7 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AA332B452A7ECF5400AFA746 /* DatabaseDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseDomain.swift; sourceTree = "<group>"; };
 		AA4843CF2A786AD60022CFB0 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		AA4EC5842A7ABC4700FAB734 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AA4EC5872A7AC2D600FAB734 /* AirportDataAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDataAPIClient.swift; sourceTree = "<group>"; };
@@ -71,6 +70,7 @@
 		AAE81E362A6F30B000D4AEB0 /* TsubasaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TsubasaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AAE81E442A6F312000D4AEB0 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		AAE81E462A6F312F00D4AEB0 /* RootDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootDomain.swift; sourceTree = "<group>"; };
+		AAEA9C8C2A819ECC00AC8705 /* AirportModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AirportModel.xcdatamodel; sourceTree = "<group>"; };
 		AAF614402A7708CB00805801 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		AAFD727C2A7C056E000E77EF /* LaunchProcessesDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchProcessesDomain.swift; sourceTree = "<group>"; };
 		AAFD727E2A7C07FE000E77EF /* DataLoadingStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLoadingStatus.swift; sourceTree = "<group>"; };
@@ -102,14 +102,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AA332B442A7ECEF000AFA746 /* Database */ = {
-			isa = PBXGroup;
-			children = (
-				AA332B452A7ECF5400AFA746 /* DatabaseDomain.swift */,
-			);
-			path = Database;
-			sourceTree = "<group>";
-		};
 		AA4843CE2A786ABF0022CFB0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,7 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				AADBF2512A74825900531A08 /* Components */,
-				AA332B442A7ECEF000AFA746 /* Database */,
+				AAEA9C8A2A819E9800AC8705 /* CoreData */,
 				AAE015412A707C70005AA99B /* Extensions */,
 				AAFD727B2A7C055C000E77EF /* Launch Processes */,
 				AA4843CE2A786ABF0022CFB0 /* Models */,
@@ -242,6 +234,14 @@
 				AAE81E462A6F312F00D4AEB0 /* RootDomain.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		AAEA9C8A2A819E9800AC8705 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				AAEA9C8B2A819ECC00AC8705 /* AirportModel.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		AAFD727B2A7C055C000E77EF /* Launch Processes */ = {
@@ -403,8 +403,8 @@
 				AAE81E472A6F312F00D4AEB0 /* RootDomain.swift in Sources */,
 				AA4EC5852A7ABC4700FAB734 /* SceneDelegate.swift in Sources */,
 				AAFD727F2A7C07FE000E77EF /* DataLoadingStatus.swift in Sources */,
-				AA332B462A7ECF5400AFA746 /* DatabaseDomain.swift in Sources */,
 				AAFD727D2A7C056E000E77EF /* LaunchProcessesDomain.swift in Sources */,
+				AAEA9C8D2A819ECC00AC8705 /* AirportModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,6 +767,19 @@
 			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		AAEA9C8B2A819ECC00AC8705 /* AirportModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AAEA9C8C2A819ECC00AC8705 /* AirportModel.xcdatamodel */,
+			);
+			currentVersion = AAEA9C8C2A819ECC00AC8705 /* AirportModel.xcdatamodel */;
+			path = AirportModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AAE81E0E2A6F30AD00D4AEB0 /* Project object */;
 }

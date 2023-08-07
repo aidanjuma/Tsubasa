@@ -37,7 +37,6 @@ struct LaunchProcessesDomain: ReducerProtocol {
         Reduce { state, action in
             switch action {
             case .fetchAirports:
-                print(state.isFirstLaunch)
                 if state.isFirstLaunch {
                     if state.dataLoadingStatus == .success || state.dataLoadingStatus == .loading {
                         return .none
@@ -56,7 +55,6 @@ struct LaunchProcessesDomain: ReducerProtocol {
                 state.airportList = IdentifiedArrayOf(
                     uniqueElements: airports
                 )
-                print(state.airportList)
                 return .none
             case .fetchAirportsResponse(.failure(let error)):
                 state.dataLoadingStatus = .error
