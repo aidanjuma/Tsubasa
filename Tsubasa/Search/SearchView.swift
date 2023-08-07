@@ -48,7 +48,8 @@ struct SearchView: View {
                                 cornerRadius: 15.0,
                                 width: geometry.size.width * 0.45,
                                 height: 50.0,
-                                label: "one-way-string"
+                                label: "one-way-string",
+                                scaleFactor: 0.9
                             )
                             Spacer()
                             RoundedRectangleButton(
@@ -59,7 +60,8 @@ struct SearchView: View {
                                 cornerRadius: 15.0,
                                 width: geometry.size.width * 0.45,
                                 height: 50.0,
-                                label: "return-string"
+                                label: "return-string",
+                                scaleFactor: 0.9
                             )
                         }
                         HStack {
