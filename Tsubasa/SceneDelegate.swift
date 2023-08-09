@@ -13,6 +13,8 @@ import SwiftUI
 struct Tsubasa: App {
     let store: Store<RootDomain.State, RootDomain.Action>
 
+    private let coreDataManager = CoreDataManager.shared
+
     init() {
         self.store = Store(
             initialState: RootDomain.State(),

@@ -11,6 +11,7 @@
 		AA4EC5852A7ABC4700FAB734 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4EC5842A7ABC4700FAB734 /* SceneDelegate.swift */; };
 		AA4EC5882A7AC2D600FAB734 /* AirportDataAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4EC5872A7AC2D600FAB734 /* AirportDataAPIClient.swift */; };
 		AA924EA02A7B0F3700FB0710 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA924EA22A7B0F3700FB0710 /* Localizable.strings */; };
+		AAAFC5332A83F4C000A91CC8 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAFC5322A83F4C000A91CC8 /* CoreDataManager.swift */; };
 		AADBF2562A7482B000531A08 /* RoundedRectangleButtonDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADBF2552A7482B000531A08 /* RoundedRectangleButtonDomain.swift */; };
 		AADBF2582A7483F700531A08 /* RoundedRectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADBF2572A7483F700531A08 /* RoundedRectangleButton.swift */; };
 		AADBF25A2A7488EB00531A08 /* SearchDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADBF2592A7488EB00531A08 /* SearchDomain.swift */; };
@@ -54,6 +55,7 @@
 		AA4EC5872A7AC2D600FAB734 /* AirportDataAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDataAPIClient.swift; sourceTree = "<group>"; };
 		AA924EA12A7B0F3700FB0710 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AA924EA32A7B0F6F00FB0710 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AAAFC5322A83F4C000A91CC8 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		AADBF2552A7482B000531A08 /* RoundedRectangleButtonDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleButtonDomain.swift; sourceTree = "<group>"; };
 		AADBF2572A7483F700531A08 /* RoundedRectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangleButton.swift; sourceTree = "<group>"; };
 		AADBF2592A7488EB00531A08 /* SearchDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDomain.swift; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				AAEA9C8B2A819ECC00AC8705 /* AirportModel.xcdatamodeld */,
+				AAAFC5322A83F4C000A91CC8 /* CoreDataManager.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 				AA4EC5852A7ABC4700FAB734 /* SceneDelegate.swift in Sources */,
 				AAFD727F2A7C07FE000E77EF /* DataLoadingStatus.swift in Sources */,
 				AAFD727D2A7C056E000E77EF /* LaunchProcessesDomain.swift in Sources */,
+				AAAFC5332A83F4C000A91CC8 /* CoreDataManager.swift in Sources */,
 				AAEA9C8D2A819ECC00AC8705 /* AirportModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
