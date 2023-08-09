@@ -17,6 +17,7 @@ struct SearchView: View {
             GeometryReader { geometry in
                 Color.background
                     .ignoresSafeArea()
+                // ZStack: Rounded blue background area w/ map.
                 ZStack(alignment: .topLeading) {
                     Color.accentColor
                         .frame(height: geometry.size.height * 0.5)
@@ -33,12 +34,14 @@ struct SearchView: View {
                                 .fontWeight(.bold)
                                 .fontDesign(.rounded)
                                 .foregroundColor(.white)
+                            // TODO: Profile photo/settings button/view...
                         }
                         Text("search-tagline-string")
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .foregroundColor(.white)
                             .padding([.bottom, .top], 7.5)
+                        // HStack: One-Way/Return Buttons
                         HStack {
                             RoundedRectangleButton(
                                 store: store.scope(
@@ -64,6 +67,7 @@ struct SearchView: View {
                                 scaleFactor: 0.9
                             )
                         }
+                        // HStack: Origin/Destination selector, with switcher.
                         HStack {
                             VStack {
                                 ZStack {
@@ -81,7 +85,6 @@ struct SearchView: View {
                                 Rectangle()
                                     .fill(.gray.opacity(0.2))
                                     .frame(width: 1, height: 24)
-
                                 ZStack {
                                     Circle()
                                         .fill(.clear)
@@ -95,7 +98,6 @@ struct SearchView: View {
                                         .foregroundColor(.accentColor)
                                 }
                             }
-
                             VStack(alignment: .leading) {
                                 HStack {
                                     VStack(alignment: .leading) {
@@ -104,7 +106,7 @@ struct SearchView: View {
                                             .fontWeight(.medium)
                                             .fontDesign(.rounded)
                                             .foregroundColor(.gray.opacity(0.8))
-                                        Text("London")
+                                        Text("(IATA) | (Orig. Name)")
                                             .font(.title3)
                                             .fontWeight(.bold)
                                             .fontDesign(.rounded)
@@ -121,14 +123,15 @@ struct SearchView: View {
                                             .fontWeight(.medium)
                                             .fontDesign(.rounded)
                                             .foregroundColor(.gray.opacity(0.8))
-                                        Text("Singapore")
+                                        Text("(IATA) | (Dest. Name)")
                                             .font(.title3)
                                             .fontWeight(.bold)
                                             .fontDesign(.rounded)
                                     }
                                 }
                             }
-
+                            // TODO: Functionality.
+                            // Button: Switch origin with destination.
                             Button {} label: {
                                 Image(systemName: "arrow.up.arrow.down")
                                     .padding(8)
@@ -146,6 +149,49 @@ struct SearchView: View {
                             RoundedRectangle(cornerRadius: 20.0)
                                 .foregroundColor(.white)
                                 .shadow(color: .black.opacity(0.1), radius: 10, x: 0, y: 3)
+                        }
+                        // TODO: Functionality.
+                        // HStack: Date(s) & passenger count selector.
+                        HStack {
+                            // Date(s):
+                            VStack(alignment: .leading) {
+                                Text("Date(s)")
+                                    .font(.system(size: 16.0))
+                                    .fontWeight(.medium)
+                                    .fontDesign(.rounded)
+                                    .foregroundColor(.gray)
+                                Text("(Departure/Arrival)")
+                                    .font(.system(size: 18.0))
+                                    .fontWeight(.semibold)
+                                    .fontDesign(.rounded)
+                            }
+                            .padding()
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .foregroundColor(.black)
+                            .background {
+                                Color(.card)
+                                    .cornerRadius(15.0)
+                            }
+                            // Passenger(s)
+                            VStack(alignment: .leading) {
+                                Text("Passenger(s)")
+                                    .font(.system(size: 16.0))
+                                    .fontWeight(.medium)
+                                    .fontDesign(.rounded)
+                                    .foregroundColor(.gray)
+                                HStack {
+                                    Text("(#)")
+                                        .font(.system(size: 18.0))
+                                        .fontWeight(.semibold)
+                                        .fontDesign(.rounded)
+                                }
+                            }
+                            .padding()
+                            .foregroundColor(.black)
+                            .background {
+                                Color(.card)
+                                    .cornerRadius(15.0)
+                            }
                         }
                     }
                     .padding()
