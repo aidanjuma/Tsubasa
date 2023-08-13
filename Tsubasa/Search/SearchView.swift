@@ -13,7 +13,7 @@ struct SearchView: View {
     let store: Store<SearchDomain.State, SearchDomain.Action>
 
     var body: some View {
-        WithViewStore(self.store) { _ in
+        WithViewStore(self.store) { viewStore in
             GeometryReader { geometry in
                 Color.background
                     .ignoresSafeArea()
@@ -150,7 +150,6 @@ struct SearchView: View {
                                 .foregroundColor(.white)
                                 .shadow(color: .black.opacity(0.1), radius: 10, x: 0, y: 3)
                         }
-                        // TODO: Functionality.
                         // HStack: Date(s) & passenger count selector.
                         HStack {
                             // Date(s):
@@ -171,6 +170,14 @@ struct SearchView: View {
                             .background {
                                 Color(.card)
                                     .cornerRadius(15.0)
+                            }
+                            .onTapGesture {
+                                viewStore.send(.toggleDateSelectionSheetVisibility)
+                            }
+                            .sheet(isPresented: viewStore.binding(get: { $0.showDateSelectionSheet }, send: .toggleDateSelectionSheetVisibility)) {
+                                ModifiedDatePicker(store:
+                                    Store(initialState: ModifiedDatePickerDomain.State(), reducer: ModifiedDatePickerDomain())
+                                )
                             }
                             // Passenger(s)
                             VStack(alignment: .leading) {

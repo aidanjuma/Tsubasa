@@ -10,9 +10,14 @@ import Foundation
 
 struct SearchDomain: ReducerProtocol {
     struct State: Equatable {
+        // Ticket Type:
         var selectedTicketType = TicketType.oneWay
         var oneWayButtonState = RoundedRectangleButtonDomain.State(isToggleable: true, isToggled: true)
         var twoWayButtonState = RoundedRectangleButtonDomain.State(isToggleable: true, isToggled: false)
+        // Date(s):
+        var showDateSelectionSheet = false
+        // Passenger(s):
+        var showPassengerSelectionSheet = false
     }
 
     enum TicketType {
@@ -22,6 +27,7 @@ struct SearchDomain: ReducerProtocol {
 
     enum Action: Equatable {
         case changeTicketType(TicketType)
+        case toggleDateSelectionSheetVisibility
     }
 
     var body: some ReducerProtocol<State, Action> {
@@ -37,6 +43,9 @@ struct SearchDomain: ReducerProtocol {
                     state.oneWayButtonState.isToggled = false
                     state.twoWayButtonState.isToggled = true
                 }
+                return .none
+            case .toggleDateSelectionSheetVisibility:
+                state.showDateSelectionSheet.toggle()
                 return .none
             }
         }
