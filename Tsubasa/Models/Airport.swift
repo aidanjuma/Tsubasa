@@ -16,7 +16,7 @@ struct Airport: Equatable, Identifiable {
     let name: String // e.g. Singapore Changi International Airport
     let city: String // e.g. Singapore
     let country: String // 2 characters, e.g. SG
-    let elevation: Int // Measured in feet, e.g. 22(ft)
+    let elevation: Int32 // Measured in feet, e.g. 22(ft)
     let latitude: Double // e.g. 1.3501900434
     let longitude: Double // e.g. 103.9940032959
     let timezone: String // e.g. Asia/Singapore
@@ -42,7 +42,7 @@ extension Airport: Decodable {
         self.name = try container.decode(String.self, forKey: .name)
         self.city = try container.decode(String.self, forKey: .city)
         self.country = try container.decode(String.self, forKey: .country)
-        self.elevation = try container.decode(Int.self, forKey: .elevation)
+        self.elevation = try container.decode(Int32.self, forKey: .elevation)
         self.latitude = try container.decode(Double.self, forKey: .latitude)
         self.longitude = try container.decode(Double.self, forKey: .longitude)
         self.timezone = try container.decode(String.self, forKey: .timezone)

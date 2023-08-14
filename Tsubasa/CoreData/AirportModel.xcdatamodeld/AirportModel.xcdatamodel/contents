@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22213.2" systemVersion="22G74" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
-    <entity name="Information" representedClassName="Information" syncable="YES" codeGenerationType="class">
+    <entity name="AirportInfo" representedClassName="AirportInfo" syncable="YES" codeGenerationType="class">
         <attribute name="city" attributeType="String"/>
         <attribute name="country" attributeType="String" minValueString="2" maxValueString="2"/>
         <attribute name="elevation" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
