@@ -29,9 +29,9 @@ struct LaunchProcessesDomain: ReducerProtocol {
         case completeFirstLaunch
     }
     
-    var fetchAirports: @Sendable () async throws -> [Airport]
-    
+    // Dependencies:
     @Dependency(\.airportDataApiClient) var airportDataApiClient
+    @Dependency(\.coreDataManager) var coreDataManager
     
     var body: some ReducerProtocol<State, Action> {
         Reduce { state, action in
@@ -45,7 +45,7 @@ struct LaunchProcessesDomain: ReducerProtocol {
                     state.dataLoadingStatus = .loading
                     return .task {
                         await .fetchAirportsResponse(
-                            TaskResult { try await fetchAirports() }
+                            TaskResult { try await airportDataApiClient.fetchAirports() }
                         )
                     }
                 }
@@ -55,6 +55,7 @@ struct LaunchProcessesDomain: ReducerProtocol {
                 state.airportList = IdentifiedArrayOf(
                     uniqueElements: airports
                 )
+                coreDataManager.insertAirports(state.airportList.elements)
                 return .none
             case .fetchAirportsResponse(.failure(let error)):
                 state.dataLoadingStatus = .error

@@ -24,16 +24,8 @@ struct RootDomain: ReducerProtocol {
         case airportList(LaunchProcessesDomain.Action)
     }
 
-    var fetchAirports: @Sendable () async throws -> [Airport]
-
-    static let live = Self(
-        fetchAirports: AirportDataAPIClient.live.fetchAirports
-    )
-
     var body: some ReducerProtocol<State, Action> {
-        Scope(state: \.launchProcessesState, action: /RootDomain.Action.airportList) {
-            LaunchProcessesDomain(fetchAirports: fetchAirports)
-        }
+        Scope(state: \.launchProcessesState, action: /RootDomain.Action.airportList) { LaunchProcessesDomain() }
         Reduce { state, action in
             switch action {
             case .airportList:
